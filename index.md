@@ -1,4 +1,7 @@
+Changes to commit
+
 *This text is in italics.*
+
 **This text is in bold.**
 # This text is Heading 1
 ## This text is Heading 2
