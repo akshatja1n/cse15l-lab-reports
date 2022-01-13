@@ -3,7 +3,7 @@
 # This text is Heading 1
 ## This text is Heading 2
 
-[Link] (https://akshatja1n.github.io/cse15l-lab-reports/index.html)
+[Link](https://akshatja1n.github.io/cse15l-lab-reports/index.html)
 
 ![Image](https://images.unsplash.com/photo-1531604250646-2f0e818c4f06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=985&q=80)
 > This is a blockquote
