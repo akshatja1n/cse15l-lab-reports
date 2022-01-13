@@ -1,3 +1,5 @@
+[Lab Report 1](lab-report-1-week-2.html)
+
 Changes to commit
 
 *This text is in italics.*
@@ -23,3 +25,4 @@ This is a horizontal rule:
 This is a code block
 print('hello')
 ```
+![Image](ss.png)
