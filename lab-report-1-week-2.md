@@ -78,7 +78,6 @@ You will be prompted with a password request, and after entering it, Test.java s
 Typing your password for every ssh and scp command gets annoying really quick. In this step, we will be placing a *public* file in the server and *private* file in the client that allow for a no-password login.
 
 1. Clientside, type `ssh-keygen` into the terminal and follow the steps. For the file, copy the directory in the parentheses. Leave the passphrase empty and hit enter. It should look similar to the terminal code below:
-
 ```
 akshat@Akshats-MacBook-Pro Lab1 % ssh-keygen
 Generating public/private rsa key pair.
@@ -109,11 +108,9 @@ $ mkdir .ssh
 ```
 
 3. Next, logout and on the clientside, copy the file over with the following command:
-
 ```
 $ scp /Users/akshat/.ssh/id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
 ```
-
 *Make sure to replace the user name and account name with your account.*
 
 4. You should now be able to login to the remote server or copy files over without your password. Try it out, and if you run into any errors, delete the .ssh directory from the server with the command `$ rm .ssh`, and repeat all the steps in this section.
