@@ -12,6 +12,7 @@ VSCode is the code editor that we will be using in this tutorial, for creating f
 ![Image](1_1.png)
 
 2. After installing VSCode, launch the application and you should see a window similar to the one in the image below (the colors/theme may be different).
+![Image](1_2.png)
 
 3. Click on the Open... button and open any test folder. Right click under folder view in the left,and create a new Java file called Test.java. Copy paste the following code into the file:
 
@@ -23,7 +24,7 @@ public class Test {
 }
 ```
 4. Finally, in the menubar in the top left, click Terminal -> New Terminal to open up the terminal that you will be working in. Your window should look similar to this:
->Image
+![Image](1_4.png)
 
 ## Step 2: Remotely Connecting to `ieng6`
 
@@ -38,8 +39,7 @@ Be sure to replace zz with the letters of your account.
 3. If you're logging in for the first time, you may be prompted with a message asking if you're sure about connecting to the server. Simply type `yes` and hit enter.
 
 4. After, you will be prompted with a message asking for your password. Enter your password (it will not be visible), and hit enter. You should now be logged in.
-
->Image
+![Image](2_4.png)
 
 *If you are running into issues with the password, repeat step 1 to reset your password, and try again.*
 
@@ -52,30 +52,26 @@ Be sure to replace zz with the letters of your account.
 * pwd
 * cd
 * ls -lat
-
->Image
+![Image](3_2.png)
 
 3. Log into the remote server again using the ssh command and entering your password. This time, try the commands on the server and notice the differences. Afterwards, exit the server.
-
->Image
+![Image](3_3.png)
 
 ## Step 4: Moving Files with `scp`
 
 An important part of interacting with a remote server is being able to tranfer files back and forth between the server and the client (your device). This can be done with the `scp` command, which copies your file over to the server.
 
 1. The file we'll be moving is Test.java, but before we move the file, we should run it clientside. User `javac Test.java' to compile the file and then 'java Test' to run the class.
-
->Image
+![Image](4_1.png)
 
 2. Now, enter the following command into the terminal, with your specific course account:
 ```
-$ scp Test.java cs15lwi22zz@ieng6.ucsd.edu:~/;
+$ scp Test.java cs15lwi22zz@ieng6.ucsd.edu:~/
 ```
 You will be prompted with a password request, and after entering it, Test.java should be transferred over to the remote server.
 
 3. Log in to your specific remote server, and then try to compile and run Test.java. It should print something different from when you ran it clientside.
-
->Image
+![Image](4_3.png)
 
 ## Step 5: Setting an ssh Key
 
@@ -120,16 +116,15 @@ $ scp /Users/akshat/.ssh/id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized
 
 *Make sure to replace the user name and account name with your account.*
 
-4. You should now be able to login to the remote server without your password. Try it out, and if you run into any errors, delete the .ssh directory from the server with the command `$ rm .ssh`, and repeat all the steps in this section.
-
->Image
+4. You should now be able to login to the remote server or copy files over without your password. Try it out, and if you run into any errors, delete the .ssh directory from the server with the command `$ rm .ssh`, and repeat all the steps in this section.
+![Image](5_4.png)
 
 ## Step 6: Optimizing Remote Running
 Using ssh keys to remove the password requirement made it easier to log in to the server and copy files. However, there are more steps that can be taken to optimize this process. 
 
 * One method I frequently use is clicking the up arrow key to navigate through old commands. This is handy for logging in/out of the server, or copying the same file after making edits to it.
 * In the `ssh cs15lwi22zz@ieng6.ucsd.edu`, putting a command in quotes right after it excutes that command after logging in. For example `ssh cs15lwi22zz@ieng6.ucsd.edu "pwd"` would print the directory of the server after logging in.
->Image
+![Image](6_1.png)
 * Separating commands with semicolons on one line executes the commands in order. For example: `javac Test.java; java Test`
 
 That's it for this tutorial! Feel free to let me know of any errors that need to be corrected.
