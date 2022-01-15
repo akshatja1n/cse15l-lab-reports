@@ -61,7 +61,7 @@ Be sure to replace zz with the letters of your account.
 
 An important part of interacting with a remote server is being able to tranfer files back and forth between the server and the client (your device). This can be done with the `scp` command, which copies your file over to the server.
 
-1. The file we'll be moving is Test.java, but before we move the file, we should run it clientside. User `javac Test.java' to compile the file and then 'java Test' to run the class.
+1. The file we'll be moving is Test.java, but before we move the file, we should run it clientside. User `javac Test.java` to compile the file and then `java Test` to run the class.
 ![Image](4_1.png)
 
 2. Now, enter the following command into the terminal, with your specific course account:
