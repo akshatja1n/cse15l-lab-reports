@@ -26,7 +26,7 @@ public class Test {
 4. Finally, in the menubar in the top left, click Terminal -> New Terminal to open up the terminal that you will be working in. Your window should look similar to this:
 ![Image](1_4.png)
 
-## Step 2: Remotely Connecting to `ieng6`
+## Step 2: Remotely Connecting to ieng6
 
 1. To connect to ieng6, you need to first find and set the password for your course specific account, which can be found [here](https://sdacs.ucsd.edu/~icc/index.php). Instructions for changing the password can be found on this [piazza post](https://piazza.com/class/kxs0toocqhv4og?cid=54).
 
