@@ -51,13 +51,13 @@ Be sure to replace zz with the letters of your account.
 * ls
 * pwd
 * cd
-* ls -lat
+* ls -lat  
 ![Image](3_2.png)
 
 3. Log into the remote server again using the ssh command and entering your password. This time, try the commands on the server and notice the differences. Afterwards, exit the server.
 ![Image](3_3.png)
 
-## Step 4: Moving Files with `scp`
+## Step 4: Moving Files with scp
 
 An important part of interacting with a remote server is being able to tranfer files back and forth between the server and the client (your device). This can be done with the `scp` command, which copies your file over to the server.
 
