@@ -127,6 +127,19 @@ Using ssh keys to remove the password requirement made it easier to log in to th
 ![Image](6_1.png)
 * Separating commands with semicolons on one line executes the commands in order. For example: `javac Test.java; java Test`
 
+Another method I discovered is to edit the .zshrc file of a mac. Instructions on editing this file can be found [here](https://stackoverflow.com/questions/36157663/editing-the-zshrc-file). In the .zshrc file, add this line with your specific account:
+```
+alias login15l="ssh cs15lwi22zz@ieng6.ucsd.edu"
+```
+
+Save the file. Now, whenever you open a new terminal, type this command:
+```
+source ~/.zshrc
+```
+
+Now, in this terminal session, you can log into the server simply by typing `login15l` and hitting enter!
+
+
 That's it for this tutorial! Feel free to let me know of any errors that need to be corrected.
 
 
