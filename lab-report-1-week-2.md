@@ -146,6 +146,7 @@ source ~/.zshrc
 
 Now, in this terminal session, you can log into the server simply by typing `login15l` and hitting enter!
 
+>Using this command, I was able to copy the file over to the remote server and compile/run it in 8 keystrokes!
 
 That's it for this tutorial! Feel free to let me know of any errors that need to be corrected.
 
