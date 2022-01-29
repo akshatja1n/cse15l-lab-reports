@@ -1,6 +1,6 @@
 # Week 4 Lab Report
 
->For context, my code passed all of the test-files given by Prof. Politz, so I created my own test files that might've caused unexpected results. This is why the name of the files below are structured as breaking-test#.md.
+>For context, my code passed all of the test-files given by Prof. Politz, so I created my own test files that might've caused unexpected results. This is why the name of the files below is structured as breaking-test#.md.
 
 ## Code Change #1
 ___
