@@ -42,9 +42,18 @@ java.lang.AssertionError: Check lab-snippet1.md expected:<[`google.com, google.c
         at MarkdownParseTest.testSnippet1(MarkdownParseTest.java:151)
 ```
 
-
-
 ### Output for Reviewed Implementation
+Test failed.
+Output:
+
+```
+1) testSnippet1(MarkdownParseTest)
+java.lang.AssertionError: Check lab-snippet1.md expected:<[`google.com, google.com, ucsd.edu]> but was:<[url.com, `google.com, google.com]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at MarkdownParseTest.testSnippet1(MarkdownParseTest.java:78)
+```
 
 
 ## Snippet 2
@@ -86,7 +95,17 @@ java.lang.AssertionError: Check lab-snippet2.md expected:<[a.com, a.com(()), exa
 
 
 ### Output for Reviewed Implementation
+Test failed.
+Output:
 
+```
+2) testSnippet2(MarkdownParseTest)
+java.lang.AssertionError: Check lab-snippet2.md expected:<[a.com, a.com(()), example.com]> but was:<[a.com, a.com((]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at MarkdownParseTest.testSnippet2(MarkdownParseTest.java:87)
+```
 
 
 ## Snippet 3
@@ -128,3 +147,26 @@ java.lang.AssertionError: Check lab-snippet3.md expected:<[https://ucsd-cse15l-w
 
 
 ### Output for Reviewed Implementation
+Test failed.
+Output:
+
+```
+3) testSnippet3(MarkdownParseTest)
+java.lang.AssertionError: Check lab-snippet3.md expected:<[https://ucsd-cse15l-w22.github.io/]> but was:<[
+    https://www.twitter.com
+, 
+    https://ucsd-cse15l-w22.github.io/
+, github.com
+
+And there's still some more text after that.
+
+[this link doesn't have a closing parenthesis for a while](https://cse.ucsd.edu/
+
+
+
+]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at MarkdownParseTest.testSnippet3(MarkdownParseTest.java:96)
+```
