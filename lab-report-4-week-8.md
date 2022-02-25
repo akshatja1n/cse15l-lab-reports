@@ -170,3 +170,15 @@ And there's still some more text after that.
         at org.junit.Assert.assertEquals(Assert.java:120)
         at MarkdownParseTest.testSnippet3(MarkdownParseTest.java:96)
 ```
+
+## Analysis
+
+### Snippet 1
+
+
+
+### Snippet 2
+
+
+
+### Snippet 3
