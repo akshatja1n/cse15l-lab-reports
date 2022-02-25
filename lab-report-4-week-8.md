@@ -173,12 +173,13 @@ And there's still some more text after that.
 
 ## Analysis
 
+>For context, my MarkdownParse's getLinks() method is different from most implementations we've seen so far. I split the input string into new lines using "\n". Then, I check each of the lines for links, rather than the full string itself. This made the code simpler to write, for me.
+
 ### Snippet 1
-
-
+Yes, I believe that a code change of less than 10 lines can be made to my code to allow it to not only pass the input in Snippet 1, but also work for singular back ticks in the code. I would have to first check whether the line starts with a back tick. Next, only if the line starts with a back tick, I would check the position of the next back tick. If the square brackets start after the second back tick, then my code works normally, and if the square brackets start before the back tick, I skip that line. This would pass Snippet 1 and include implementation in general for back ticks.
 
 ### Snippet 2
-
-
+Yes, I believe that a code change of less than 10 lines can be made to my code to allow it to not only pass the input in Snippet 2, but also work for brackets and parentheses in the text and links. The solution for my code would be to find the last ")" in the code when trying to find the link, since this would result in any embedded () to be included in the link. An example of this is in Snippet 2, where my code returns a.com(( instead of a.com(()). Looking for the last ")" would allow a.com(()) to be captured, instead of taking the first "(".
 
 ### Snippet 3
+I don't believe that a code change of less than 10 lines would allow my code to check for new lines in the brackets and parentheses, and pass Snippet 3. This is because, as stated above, my getLinks() separates the input string into lines, and goes through line by line, checking for inputs. When implementing this form of getLinks(), I had no idea that the text can be sepearated or that the link can be on a new line. As a result, I would have to redo a large part of my getLinks, ensuring that I account for new lines inside brackets. One way of doing this could be by only separating the string into new lines if the new line character (\n) is not in between [] or ().
