@@ -33,7 +33,7 @@ Given markdown output was:
 
 Both of the given implementations are wrong, since the actual output for 22.md is bar*.
 
-### Bug Fix 2
+### Bug Fix 1
 There are two things to note here. 
 
 The first is accounting for escaped characters that have been escaped using the back slash. To solve this, I can code a helper method that takes a string, and returns a string with the escaped characters converted to what they are supposed to be. For example, the string "bar\\*" would be converted to "bar\*" by my method. 
