@@ -15,7 +15,7 @@ The correct output using VSCode's md file preview is:
 
 \[bar*\]
 
-This is because the part of the string in the parentheses is encapsulated in parentheses, which makes that part a title for the link. A title refers to the text that shows up when hovering over a link. In this case, that title is ti*tle.
+This is because the part of the string in the parentheses is encapsulated in quotes, which makes that part a title for the link. A title refers to the text that shows up when hovering over a link. In this case, that title is ti*tle.
 
 ### My Output
 My output was:
