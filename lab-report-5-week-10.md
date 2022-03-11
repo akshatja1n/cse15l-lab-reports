@@ -40,14 +40,14 @@ The first is accounting for escaped characters that have been escaped using the 
 
 ```
 // Returns the given string with the escaped characters converted to the actual values.
-private String escapedCharacters(String text){}
+private static String escapedCharacters(String text){}
 ```
 
 
 Then, I would call this method on any string before adding it to the output ArrayList. 
 
 ```
-toReturn.add(returnString.escapedCharacters());
+toReturn.add(escapedCharacters(returnString));
 ```
 
 The second thing to account for is text that denotes the title for a link. For example, if you hover in the link outputted by the 22.md file, it would display ti*tle. As a result, to account for this, I would remove any text in quotations in my returnString string, including the quotations themselves. This can be done by first checking if there are two quotations in the returnString, and then using indexOf() I would find substring and remove it from the returnString. 
